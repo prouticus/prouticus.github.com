@@ -216,7 +216,10 @@ h1 {
     color: var(--body-text) !important;
 }
 
-
+/* Get rid of vertical lines between bullets */
+.block-border-left {
+border-left: 0px solid WhiteSmoke;
+}
 
 /* sidebar text color */
 .page, .log-button, .starred-pages-wrapper {
