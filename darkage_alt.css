@@ -217,11 +217,6 @@ h1 {
 }
 
 
-/* Get rid of vertical lines between bullets */
-.block-border-left {
-border-left: 0px solid WhiteSmoke;
-}
-
 
 /* sidebar text color */
 .page, .log-button, .starred-pages-wrapper {
@@ -237,26 +232,6 @@ border-left: 0px solid WhiteSmoke;
     transition: color .3s ease;
     background: transparent !important;
 }
-
-
-/* sidebar items padding */
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
-    padding: 2px;
-}
-
-/* "SHORTCUTS" text */
-div.flex-v-box.starred-pages-wrapper > div.flex-h-box > span {
-    font-size: 14px !important;
-    opacity: 80%;
-    letter-spacing: 0.10em;
-}
-
-/* sidebar text */
-div.roam-sidebar-container.noselect > div > div {
-    font-size: 14px !important;
-    letter-spacing: 0.10em;
-}
-
 
 
 
@@ -913,7 +888,7 @@ select option {
   color: var(--references) !important;
   padding: 0em;
   font-weight: 100;
-  ont-size: 65% !important;  
+  font-size: 65% !important;  
 }
 
 /* Alias */
