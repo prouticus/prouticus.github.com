@@ -344,7 +344,10 @@ strong {
 
 hr {
   border: 1px solid #394b59;
-  border-radius: 5px;
+}
+
+hr.new1 {
+  border: 1px dashed #394b59;
 }
 
 
