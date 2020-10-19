@@ -216,6 +216,13 @@ h1 {
     color: var(--body-text) !important;
 }
 
+
+/* Get rid of vertical lines between bullets */
+.block-border-left {
+border-left: 0px solid WhiteSmoke;
+}
+
+
 /* sidebar text color */
 .page, .log-button, .starred-pages-wrapper {
     color: var(--sidebar-text) !important;
@@ -230,6 +237,28 @@ h1 {
     transition: color .3s ease;
     background: transparent !important;
 }
+
+
+/* sidebar items padding */
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+    padding: 2px;
+}
+
+/* "SHORTCUTS" text */
+div.flex-v-box.starred-pages-wrapper > div.flex-h-box > span {
+    font-size: 14px !important;
+    opacity: 80%;
+    letter-spacing: 0.10em;
+}
+
+/* sidebar text */
+div.roam-sidebar-container.noselect > div > div {
+    font-size: 14px !important;
+    letter-spacing: 0.10em;
+}
+
+
+
 
 /* Heading/Header Colors, includes Date header on daily notes */
 h1, h2, h3 {
@@ -329,13 +358,26 @@ strong {
 }
 
 
+/*///////////////////////////*/
+/*                           */
+/*     Horizontal Rule       */
+/*                           */
+/*///////////////////////////*/
+
+hr {
+  border: 1px solid #394b59;
+  border-radius: 5px;
+}
+
+
 /* block reference */
 .roam-block .rm-block-ref, span[style*="color: red"] {
     background-color: transparent !important;
     color: var(--block-reference-text) !important;
     transition: color .3s ease, border .3s ease;
-    border-bottom: 1px solid var(--block-reference-text);
-    
+    border-bottom: 0px solid var(--block-reference-text); /* def 1px */
+    border-left: 1px groove var(--block-reference-text); /* def 1px */
+    padding-left: 10px; /* def 1px */
 }
 
 .rm-block-ref:hover {
@@ -380,10 +422,25 @@ strong {
 
 /* Reference Background Color + Spacing Fixes */
 .rm-reference-item {
-    background-color: transparent;
     margin: 10px 0px;
     padding-bottom: 10px;
+	font-size: 10px !important;
+    border-radius: 6px;
+    border: 1px solid #394b59;
+    margin-right: 8px;
+    flex: 1 1 100%;
+    word-break: break-word;
+    background-color: var(--sidebar-background);
+    padding: 8px;    
     border-bottom: 1px solid var(--references);
+}
+
+.rm-reference-main.rm-query-content {
+    padding: 0.8em;
+}
+
+.rm-reference-main .rm-reference-item .rm-block-text {
+    font-size: 90%;
 }
 
 .rm-level1 {
@@ -392,7 +449,7 @@ strong {
 
 /* Reference Section Divider */
 .rm-reference-container {
-    border-top: 5px double var(--references);
+    border-top: 1px double var(--references);
     padding-top: 15px;
 }
 
@@ -854,7 +911,9 @@ select option {
 .rm-query-title {
   background: inherit !important;
   color: var(--references) !important;
-  font-weight: 600;
+  padding: 0em;
+  font-weight: 100;
+  ont-size: 65% !important;  
 }
 
 /* Alias */
