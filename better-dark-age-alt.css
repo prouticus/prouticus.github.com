@@ -1248,7 +1248,9 @@ div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * 
   border-radius: 0;
   padding      : 0 !important;
   /* border-color : var(--references) !important; */
-  border-left: 0px solid WhiteSmoke;
+  border-left: 0px;
+  border-color : WhiteSmoke !important;
+  
 }
 
 /* Remove second small line (HT Hasan Yalcinkaya) */
