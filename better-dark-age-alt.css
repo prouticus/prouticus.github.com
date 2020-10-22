@@ -270,7 +270,7 @@ div[style*="border-bottom-color: rgb(138, 155, 168);"] {
 
 /* "SHORTCUTS" text */
 div.flex-v-box.starred-pages-wrapper > div.flex-h-box > span {
-    font-size: 1empx !important;
+    font-size: 1em !important;
     opacity: 80%;
     letter-spacing: 0.10em;
 }
@@ -370,7 +370,7 @@ h1 {
 
 /* Left sidebar separator color  */
 div[style*="background-color: rgb(57, 75, 89);"] {
-  background-color: var(--icons) !important;
+  background-color: var(--sidebar-text) !important;
 }
 
 /* Heading/Header Colors */
@@ -581,6 +581,7 @@ strong[tabindex="-1"] {
   border-radius: 5px;
   border       : transparent;
   padding      : 0;
+  font-size    : 0.5em;
 }
 
 .rm-ref-page-view {
@@ -1538,8 +1539,72 @@ canvas[data-id="layer2-node"] {
 }
 
 /*---------------------------------------------------------------------------*/
-/* SIDEBAR TWEAKS */
+/* Prouticus TWEAKS */
 
+
+/* Align vertical lines and remove notches (HT: Hasan Yalcinkaya) */
+.block-border-left {
+  margin-left  : 6px;
+  border-radius: 0;
+  padding      : 0 !important;
+  /* border-color : var(--references) !important; */
+  border-left: 0px;
+  border-color : WhiteSmoke !important;
+}
+
+hr {
+  margin-top   : 10px;
+  margin-bottom: 0;
+  border: 1px solid #394b59;  
+}
+
+/* sidebar items padding */
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+    padding: 2px;
+}
+
+/* "SHORTCUTS" text */
+div.flex-v-box.starred-pages-wrapper > div.flex-h-box > span {
+    font-size: 1em !important;
+    opacity: 80%;
+    letter-spacing: 0.05em;
+}
+
+
+/* sidebar text */
+div.roam-sidebar-container.noselect > div > div {
+    font-size: 1.1em !important;
+    letter-spacing: 0.05em;
+}
+
+/* checkboxes */
+.checkmark {
+    background: #FFFFFF00;
+    border-color: #33bdea;
+}
+
+
+/* strikethrough for TODOs */
+.custom-strikethrough { text-decoration: line-through; opacity: 0.4; }
+
+/* ToDos color + Z-index Fix */
+.check-container input:checked ~ .checkmark {
+    background-color: #FFFFFF;
+    background-color: rgb(27, 159, 28);
+}
+
+
+.check-container input:checked ~ .checkmark {
+    background: #33bdea;
+}
+.check-container input:checked ~ .checkmark:after {
+    border-color: #000;
+}
+
+.rm-query-title {
+  font-weight: 100;
+  font-size: 65% !important;  
+}
 
 
 /*---------------------------------------------------------------------------*/
