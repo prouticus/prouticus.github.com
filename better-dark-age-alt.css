@@ -1225,6 +1225,7 @@ div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * 
 
 .CodeMirror * {
   font-family: var(--secondary-font);
+  font-size: 0.90em;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -1606,6 +1607,10 @@ div.roam-sidebar-container.noselect > div > div {
   font-size: 65% !important;  
 }
 
+.CodeMirror * {
+  font-family: var(--secondary-font);
+  font-size: 0.90em;
+}
 
 /*---------------------------------------------------------------------------*/
 /* UPDATE ALERTS AND VARIOUS SPECIAL MENUS */
