@@ -263,6 +263,24 @@ div[style*="border-bottom-color: rgb(138, 155, 168);"] {
   font-weight     : bold;
 }
 
+/* Left sidebar items padding */
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+    padding: 2px;
+}
+
+/* "SHORTCUTS" text */
+div.flex-v-box.starred-pages-wrapper > div.flex-h-box > span {
+    font-size: 1empx !important;
+    opacity: 80%;
+    letter-spacing: 0.10em;
+}
+
+/* sidebar text */
+div.roam-sidebar-container.noselect > div > div {
+    font-size: 1.1em !important;
+    letter-spacing: 0.10em;
+}
+
 /* Mobile bar (HT: Azlen) */
 
 #rm-mobile-bar {
@@ -1229,7 +1247,7 @@ div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * 
   margin-left  : 6px;
   border-radius: 0;
   padding      : 0 !important;
-  border-color : var(--references) !important;
+  /* border-color : var(--references) !important; */
   border-left: 0px solid WhiteSmoke;
 }
 
@@ -1520,10 +1538,6 @@ canvas[data-id="layer2-node"] {
 /*---------------------------------------------------------------------------*/
 /* SIDEBAR TWEAKS */
 
-/* sidebar items padding */
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
-    padding: 2px;
-}
 
 
 /*---------------------------------------------------------------------------*/
