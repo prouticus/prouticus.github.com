@@ -299,10 +299,6 @@ strong {
   color: var(--bold-color);
 }
 
-/* Get rid of vertical lines between bullets */
-.block-border-left {
-border-left: 0px solid WhiteSmoke;
-}
 
 /* Heading Sizes */
 h1 {
@@ -1234,6 +1230,7 @@ div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * 
   border-radius: 0;
   padding      : 0 !important;
   border-color : var(--references) !important;
+  border-left: 0px solid WhiteSmoke;
 }
 
 /* Remove second small line (HT Hasan Yalcinkaya) */
@@ -1259,6 +1256,7 @@ td {
 hr {
   margin-top   : 10px;
   margin-bottom: 0;
+  border: 1px solid #394b59;  
 }
 
 h3.rm-level3 {
