@@ -299,6 +299,11 @@ strong {
   color: var(--bold-color);
 }
 
+/* Get rid of vertical lines between bullets */
+.block-border-left {
+border-left: 0px solid WhiteSmoke;
+}
+
 /* Heading Sizes */
 h1 {
   font-size: var(--page-head-font-size) !important;
@@ -775,7 +780,7 @@ div[style*="background: rgb(255, 243, 205);"] {
 /* Reference Background Color + Spacing Fixes */
 .rm-reference-item {
   background-color: transparent;
-  margin          : 10px 0;
+  margin          : 10px 0px;
   padding-bottom  : 10px;
   border-bottom   : 1px solid var(--references);
 }
@@ -1513,6 +1518,16 @@ canvas[data-id="layer2-node"] {
   border-radius: 10px;
   box-shadow   : 0 1px 5px rgba(0, 0, 0, 0.6);
 }
+
+/*---------------------------------------------------------------------------*/
+/* SIDEBAR TWEAKS */
+
+/* sidebar items padding */
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+    padding: 2px;
+}
+
+
 /*---------------------------------------------------------------------------*/
 /* UPDATE ALERTS AND VARIOUS SPECIAL MENUS */
 body > div.bp3-portal > div > div > span > div > span > strong,
