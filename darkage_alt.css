@@ -76,6 +76,15 @@ div, textarea {
     font-family: var(--global-font) !important;
 }
 
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--background);
+        color: white;
+    }
+}
+
 /* Table Cell sizing */
 td {
     padding: 8px 8px !important;
@@ -307,10 +316,31 @@ strong[tabindex="-1"] {
     color: var(--attributes-color) !important;
   }
 
+
+/* checkboxes */
+.checkmark {
+    background: #FFFFFF00;
+    border-color: #33bdea;
+}
+
+
+/* strikethrough for TODOs */
+.custom-strikethrough { text-decoration: line-through; opacity: 0.4; }
+
 /* ToDos color + Z-index Fix */
 .check-container input:checked ~ .checkmark {
     background-color: #FFFFFF;
     background-color: rgb(27, 159, 28);
+}
+
+
+
+
+.check-container input:checked ~ .checkmark {
+    background: #33bdea;
+}
+.check-container input:checked ~ .checkmark:after {
+    border-color: #000;
 }
 
 .check-container {
@@ -1079,41 +1109,6 @@ div[style*="padding-right: calc((100% - 800px) / 2); padding-left: calc((100% - 
 /*/////////////////////////*/
 
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--background);
-        color: white;
-    }
-}
-
-
-
-/* strikethrough for TODOs */
-.custom-strikethrough { text-decoration: line-through; opacity: 0.4; }
-
-hr.new {
-  border: 1px dashed #394b59;
-}
-
-/* checkboxes */
-.checkmark {
-    background: #FFFFFF00;
-    border-color: #33bdea;
-}
-.check-container input:checked ~ .checkmark {
-    background: #33bdea;
-}
-.check-container input:checked ~ .checkmark:after {
-    border-color: #000;
-}
-
-/* Get rid of vertical lines between bullets */
-.block-border-left {
-border-left: 0px solid WhiteSmoke;
-}
-
-
 /* sidebar items padding */
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
     padding: 2px;
@@ -1131,11 +1126,6 @@ div.roam-sidebar-container.noselect > div > div {
     font-size: 1.1em !important;
     letter-spacing: 0.10em;
 }
-
-
-
-
-
 
   /* David's flex width fix */
 .roam-center {
