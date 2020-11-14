@@ -277,8 +277,8 @@ div.flex-v-box.starred-pages-wrapper > div.flex-h-box > span {
 
 /* sidebar text */
 div.roam-sidebar-container.noselect > div > div {
-    font-size: 1.1em !important;
-    letter-spacing: 0.10em;
+    font-size: 0.9em !important;
+    letter-spacing: 0.00em;
 }
 
 /* Mobile bar (HT: Azlen) */
