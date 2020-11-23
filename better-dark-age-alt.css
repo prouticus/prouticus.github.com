@@ -4,15 +4,6 @@
 /*---------------------------------------------------------------------------*/
 /* MAIN BODY AND BLOCK COLORS */
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--background);
-        color: white;
-    }
-}
-
-
 .roam-body-main,
 body {
   background-color: var(--background) !important;
