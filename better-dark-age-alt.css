@@ -66,6 +66,12 @@ body {
   border-radius   : 5px;
 }
 
+/* Attribute links Background */
+.rm-attr-ref {
+  font-weight: 1000 !important;
+  color: var(--attributes-color) !important;
+}
+
 /* Block reference */
 
 .block-ref-count-button {
