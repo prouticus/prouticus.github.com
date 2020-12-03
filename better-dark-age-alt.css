@@ -13,6 +13,18 @@ body {
   background-color: inherit !important;
 }
 
+
+
+.rm-bullet--closed .rm-bullet__inner {
+  background-color: var(--closed-bullets) !important;
+}
+
+.rm-bullet__inner {
+  background-color: var(--bullets) !important;
+}
+
+/*
+
 .roam-bullet-closed {
   background-color: var(--closed-bullets) !important;
 }
@@ -20,6 +32,7 @@ body {
 .simple-bullet-inner {
   background-color: var(--bullets) !important;
 }
+*/
 
 .simple-bullet-inner:hover {
   background-color: var(--icons-hover) !important;
