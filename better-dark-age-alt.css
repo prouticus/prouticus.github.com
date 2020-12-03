@@ -16,7 +16,8 @@ body {
 
 
 .rm-bullet--closed .rm-bullet__inner {
-  background-color: var(--closed-bullets) !important;
+  /* background-color: var(--closed-bullets) !important; */ /* DEPRECATED */
+  border: 4px solid var(—bullet-closed-border);
 }
 
 .rm-bullet__inner {
